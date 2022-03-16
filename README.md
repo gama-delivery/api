@@ -5,7 +5,7 @@ A api disposta aqui é para uso público de desenvolvedores e nossos clientes.
 
 - É necessario um usuário do tipo "admin" gerar o token em `Configurações >> Integrações >> Token de integrações` ou gerar o token através da api;
 - O token não expira e pode ser renovado a qualquer hora pelo usuário;
-- Utilizar no cabeçalho/header como X-Api-Key;
+- Após gerar o token, utilizar no cabeçalho como X-Api-Key o token gerado;
 - Se o token estiver inválido, será retornado `401`, como erro de permissão e acesso não autorizado;
 
 ## POST - /ApiAuth/autenticar
@@ -45,7 +45,7 @@ A api disposta aqui é para uso público de desenvolvedores e nossos clientes.
 }
 ```
 
-### header
+### cabeçalho
 ```
 {
     "X-Api-Key": string // Gerado anteriormente na autenticação
@@ -104,3 +104,4 @@ A api disposta aqui é para uso público de desenvolvedores e nossos clientes.
 # Links úteis
 - [Central de Ajuda](https://ajuda.gamadelivery.app)
 - [Ambiente de homologação](https://staging.gamadelivery.app)
+- [Collection no postman](./API.postman_collection.json)
