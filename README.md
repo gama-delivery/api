@@ -1,7 +1,10 @@
+# api-v1
+A api disposta aqui é para uso público de desenvolvedores e nossos clientes.
+
 # Autenticação
 
 - É necessario um usuário do tipo "admin" gerar o token em `Configurações >> Integrações >> Token de integrações` ou gerar o token através da api;
-* O token não expira e pode ser renovado a qualquer hora pelo usuário;
+- O token não expira e pode ser renovado a qualquer hora pelo usuário;
 - Utilizar no cabeçalho/header como X-Api-Key;
 - Se o token estiver inválido, será retornado `401`, como erro de permissão e acesso não autorizado;
 
@@ -97,3 +100,7 @@
     "data": [],
 }
 ```
+
+# Links úteis
+- [Central de Ajuda](https://ajuda.gamadelivery.app)
+- [Ambiente de homologação](https://staging.gamadelivery.app)
